@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main() {
+    int a,b,c;
+    printf("Input the first integer: ");
+    scanf("%d", &a);
+    printf("Input the Second integer: ");
+    scanf("%d", &b);
+    printf("Input the Third integer: ");
+    scanf("%d", &c);
+    int m;
+    if(a>b && a>c){
+        m = a;
+    }
+    else if(b>a&&b>c){
+        m = b;
+    }
+    else{
+        m=c;
+    }
+    printf("Maximum value of three integers: %d", m);
+}
