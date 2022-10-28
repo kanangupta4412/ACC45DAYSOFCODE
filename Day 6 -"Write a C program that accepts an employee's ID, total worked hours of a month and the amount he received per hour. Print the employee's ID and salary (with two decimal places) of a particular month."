@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main() {
+    int eid;
+    float wh,sph;
+    printf("Input the Employees ID(Max. 10 chars): ");
+    scanf("%d", &eid);
+    printf("Input the working hrs: ");
+    scanf("%f", &wh);
+    printf("Salary amount/hr: ");
+    scanf("%f", &sph);  
+    printf("Employees ID = %d\n", eid);
+    printf("Salary = U$ %.2f\n", wh*sph);
+}
