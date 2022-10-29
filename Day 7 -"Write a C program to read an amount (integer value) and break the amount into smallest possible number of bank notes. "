@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main() {
+    int a, a100,a50,a20,a10,a5,a2,a1;
+    printf("Enter the amount: ");
+    scanf("%d", &a);
+    a100 = a/100;
+    a50 = a%100/50;
+    a20 = a%100%50/20;
+    a10 = a%100%50%20/10;
+    a5 = a%100%50%20%10/5;
+    a2 = a%100%50%20%10%5/2;
+    a1 = a%100%50%20%10%5%2/1;
+    printf("There are:\n%d Note(s) of 100.00\n%d Note(s) of 50.00\n%d Note(s) of 20.00\n%d Note(s) of 10.00\n%d Note(s) of 5.00\n%d Note(s) of 2.00\n%d Note(s) of 1.00", a100,a50,a20,a10,a5,a2,a1);
+}
