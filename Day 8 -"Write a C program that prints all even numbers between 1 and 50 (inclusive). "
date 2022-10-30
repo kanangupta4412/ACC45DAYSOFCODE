@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main() {
+    printf("Even numbers between 1 to 50 (inclusive): \n");
+    for(int i=1;i<51;i++){
+        if(i%2==0){
+            printf("%d ", i);
+        }
+    }
+}
