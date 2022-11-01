@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main() {
+    int a = 7;
+    printf("Numbers which will give remainder 3 when devided by %d are:\n", a);
+    for(int i=1;i<=100;i++){
+        if(i==3){
+            continue;
+        }
+        if(i%a==3){
+            printf(" %d",i); 
+        }
+    }
+}
