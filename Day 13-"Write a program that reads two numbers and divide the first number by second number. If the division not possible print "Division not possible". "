@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main() {
+    float a,b;
+    printf("Input First Number: ");
+    scanf("%d", &a);
+    printf("Input Second Number: ");
+    scanf("%d", &b);
+    if(a<b){
+            printf("Division Not Possible");
+    }
+    else{
+        printf("Devided\nAnswer is %.2f", a/b);
+    }
+}
