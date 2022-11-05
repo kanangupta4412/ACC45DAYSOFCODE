@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main() {
+    int a,b;
+    int sum = 0;
+    printf("Input First Integer: ");
+    scanf("%d", &a);
+    printf("Input Second Integer: ");
+    scanf("%d", &b);
+    for(int i=a;i<=b;i++){
+        if(i%17!=0){
+            sum+=i;
+        }
+    }
+    printf("Sum of all numbers not divisible by 17 is = %d", sum);
+}
