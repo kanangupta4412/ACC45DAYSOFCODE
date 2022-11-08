@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main() {
+    float sum=0,count;
+    int k;
+    printf("// Input Mathematics marks (0 to terminate): ");
+    for(int i=0;i<100;i++){
+        scanf("%d", &k);
+        sum+=k;
+        if(k==0){
+            break;
+        }
+        count++;
+    }
+    printf("Average marks in Mathematics: %.2f", sum/count);
+} 
