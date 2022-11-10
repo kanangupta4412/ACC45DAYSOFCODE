@@ -1,0 +1,8 @@
+#include<stdio.h>
+void main() {
+    int a,b,c;
+    printf("Enter three characters: \n");
+    scanf("%c %c %c",&a,&b,&c );
+    printf("Your Entered Characters: %c %c %c\n", a,b,c);
+    printf("Reversed Characters: %c %c %c", c,b,a);
+}
