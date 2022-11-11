@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main() {
+    float td,tf;
+    printf("Input total distance in km: ");
+    scanf("%f", &td);
+    printf("Input total fuel spent in liters: ");
+    scanf("%f", &tf);
+    printf("Average Consumption (km/lt): %.3f", td/tf);
+}
