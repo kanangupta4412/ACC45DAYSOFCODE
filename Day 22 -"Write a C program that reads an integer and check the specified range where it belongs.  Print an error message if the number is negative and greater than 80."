@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main() {
+    int n, a=0, b=20;
+    printf("Input an integer: ");
+    scanf("%d", &n);
+    if(a<n&&b>n){
+        printf("Number is in the specified range. ");
+    }
+    else if(n>80||n<0){
+        printf("Error\nNumber is grater than 80 or less than 0");
+    }
+    else{
+        printf("Number is not in specified range.");
+    }
+}
