@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+   int n,x;
+   printf("Enter the size of array: ");
+   scanf("%d",&n);
+    printf(" minimum elements: ");
+    scanf("%d",&x); 
+    int arr[n], i;
+    for(i=0;i<n;i++){
+    printf(" ");
+    scanf("%d",&arr[i]);}
+    for(i=0;i<n;i++)
+        if(arr[i]%7==0){
+        printf("yes");}
+        else{
+            printf("no");}
+    
+   
+    return 0;
+}
