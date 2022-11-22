@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n,x,i,m=0,c;
+    printf("Enter the no. of gifts: ");
+    scanf("%d",&n);
+    printf("Enter the integer for fav toy: ");
+    scanf("%d",&x);
+    printf("Enter the integers: ");
+    for(i=0;i<n;i++){
+        scanf("%d",&c);
+        if(x==c)
+        m++;
+    }
+    if(m>0){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
+
+    return 0;
+}
