@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    int ar[n],i,c1=0,c2=0;
+    printf("Enter the elements: ");
+    for(i=0;i<n;i++){
+     scanf("%d",&ar[i]);
+    }
+    for(i=0;i<n;i++){
+        if(ar[i]==0){
+            c1++;
+        }
+    }
+     printf("No. of 0s: %d\n",c1);
+     for(i=0;i<n;i++){
+        if(ar[i]==1){
+            c2++;
+        }
+    }
+   printf("No. of 1s: %d\n",c2);
+    
+    return 0;
+}
