@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+   int n,i,fact=1,l;
+   printf("Enter the size of an array: ");
+   scanf("%d",&n);
+   int ar[n];
+   printf("Enter the elements: ");
+   for(i=0;i<n;i++){
+       scanf("%d",&ar[i]);
+   }
+   for(i=1;i<n;i++){
+       if(ar[0] < ar[i]){
+           ar[0]=ar[i];
+       }
+   }
+   if(ar[0]==0){
+       printf("Error");
+   }
+   else{
+       for(l=1;l<=ar[0];l++){
+           fact=fact*l;
+       }
+       printf(" factorial of %d in an array : %d",ar[0],fact);
+   }
+    return 0;
+}
