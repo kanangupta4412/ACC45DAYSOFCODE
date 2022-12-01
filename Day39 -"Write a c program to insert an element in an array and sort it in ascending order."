@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int ar[100];
+    int n,j,temp;
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    int i,p,loc;
+    printf("Enter the elements: ");
+    for(i=0;i<n;i++){
+     scanf("%d",&ar[i]);
+    }
+    printf("Enter the element you want to insert: ");
+    scanf("%d",&p);
+    printf("Enter the position: ");
+    scanf("%d",&loc);
+    loc--;
+    for(i=n-1;i>=loc;i--){
+        ar[i+1]=ar[i];
+    }
+    ar[loc]=p;
+    for(i=0;i<n+1;i++)
+    printf("%d ",ar[i]);
+    for(i=0;i<n;i++){
+    for(j=i+1;j<n;j++)
+    if(ar[i]>ar[j]){
+    temp=ar[i];
+    ar[i]=ar[j];
+    ar[j]=temp;
+    }
+    }
+    printf("\nsorted array:");
+    for(i=0;i<n;i++)
+    printf(" %d",ar[i]);
+    return 0;
+}
