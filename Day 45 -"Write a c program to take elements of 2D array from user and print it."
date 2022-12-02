@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+  int row, column;
+   printf("Ener row size: ");
+  scanf("%d", &row);
+  printf("Ener column size: ");
+  scanf("%d", &column);
+  int arr[row][column];
+  for(int i=0;i<row;i++)
+  {
+    for(int j=0;j<column;j++)
+    {
+      printf("Enter arr[%d][%d]: ",i,j);
+      scanf("%d", &arr[i][j]);
+    }
+    printf("\n");
+  }
+  printf("The Array elements are:\n");
+  for(int i=0; i<row; i++) {
+    for(int j=0; j<column; j++) {
+      printf("%d ", arr[i][j]);
+    }
+    printf("\n");
+  }
+
+  return 0;
+}
