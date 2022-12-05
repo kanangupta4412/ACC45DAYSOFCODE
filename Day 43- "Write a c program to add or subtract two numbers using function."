@@ -1,0 +1,15 @@
+#include <stdio.h>
+int addsub(int a,int b);
+int main() {
+    int a,b;
+    printf("a: ");
+    scanf("%d",&a);
+    printf("b: ");
+    scanf("%d",&b);
+    addsub(a,b);
+    return 0;
+}
+int addsub(int a,int b){
+    printf("Sum is %d \n",a+b);
+    printf("Difference is %d or %d",a-b,b-a);
+}
